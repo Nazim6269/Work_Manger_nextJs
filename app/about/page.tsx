@@ -1,5 +1,11 @@
-import React from "react";
-
-export const About = () => {
+const takeTime = async () => {
+  await new Promise((resolve) => {
+    setTimeout(resolve, 3000);
+  });
+};
+const About = async () => {
+  await takeTime();
   return <div>About</div>;
 };
+
+export default About;
