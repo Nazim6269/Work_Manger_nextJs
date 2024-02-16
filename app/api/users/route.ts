@@ -21,6 +21,14 @@ export function GET() {
 
 export function POST() {}
 
-export function DELETE() {}
+export function DELETE() {
+  return NextResponse.json(
+    {
+      message: "delete",
+      status: true,
+    },
+    { status: 201 }
+  );
+}
 
 export function PUT() {}
